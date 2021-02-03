@@ -38,3 +38,21 @@ header .list-inline li.active {
 header .list-inline li a {
   color: black;
 }
+
+main {
+  background-image: url("/img/fondo-pag-speciali.jpg");
+}
+main .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .container .card {
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+}
+main .container .card img {
+  width: 100%;
+  display: block;
+}
