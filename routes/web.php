@@ -157,3 +157,8 @@ Route::get('/', function () {
         ]
     );
 });
+
+
+Route::get('/pasta', function () {
+    return view('pasta');
+});
