@@ -47,7 +47,7 @@ header .list-inline li a {
 main {
   background-image: url("/img/fondo-pag-speciali.jpg");
   background-repeat: repeat-y;
-  padding: 60px 0;
+  padding: 60px 0px 30px 0;
 }
 main h2 {
   color: #163776;
@@ -56,7 +56,7 @@ main h2 {
 main .card-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  margin: 15px 0;
 }
 main .card-container .card {
   width: calc(100% / 3 - 10px);
@@ -68,24 +68,32 @@ main .card-container .card img {
 }
 
 footer {
+  background-image: url("/img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+footer .footer-content {
   padding: 60px 0;
   color: #848D9B;
   display: flex;
 }
-footer .col {
+footer .footer-content .col {
   width: calc(100% / 3 - 10px);
   margin: 10px 5px;
 }
-footer .col h3 {
+footer .footer-content .col h3 {
   font-size: 24px;
+  margin-bottom: 20px;
 }
-footer .col ul {
+footer .footer-content .col ul {
   list-style-type: none;
   font-size: 18px;
+  margin-bottom: 20px;
 }
-footer .col a {
+footer .footer-content .col a {
   color: inherit;
 }
-footer .col .link-list li {
+footer .footer-content .col .link-list li {
   padding: 5px 0;
 }
