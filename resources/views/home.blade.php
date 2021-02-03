@@ -51,8 +51,8 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div>
+        <footer class="container">
+            <div class="col">
                 <img src="{{ asset('img/marchio-sito-test.png') }}" alt="">
                 <ul>
                     <li>Ragione sociale: La Molisana S.P.A.</li>
@@ -68,8 +68,9 @@
                     <li>telefono 3801292455</li>
                 </ul>
             </div>
-            <div>
-                <ul>
+            <div class="col">
+                <h3>PASTIFICIO</h3>
+                <ul class="link-list">
                     <li><a href="">Il Pastifico</a></li>
                     <li><a href="">Grano decorticato a pietra</a></li>
                     <li><a href="">Il Molise c'è</a></li>
@@ -79,9 +80,8 @@
                     <li><a href="">Spaghetto Quadrato</a></li>
                     <li><a href="">Le Persone</a></li>
                 </ul>
-            </div>
-            <div>
-                <ul>
+                <h3>PRODOTTI</h3>
+                <ul class="link-list">
                     <li><a href="">Le Classiche</a></li>
                     <li><a href="">Le Integrali</a></li>
                     <li><a href="">Le Speciali</a></li>
@@ -91,8 +91,9 @@
                     <li><a href="">Le Extra di Lusso</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>
+            <div class="col">
+                <h3>COLLEZIONE DA CHEF</h3>
+                <ul class="link-list">
                     <li><a href="">Collezione da Chef</a></li>
                     <li><a href="">Grandi Cucine</a></li>
                     <li><a href="">Le Speciali</a></li>

@@ -1,0 +1,25 @@
+footer {
+    padding: 60px 0;
+    color: $footerColor;
+    display: flex;
+    .col {
+        width: calc(100% / 3 - 10px);
+        margin: 10px 5px;
+        h3 {
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            font-size: 18px;
+        }
+        a {
+            color: inherit;
+        }
+        .link-list {
+            li {
+                padding: 5px 0;
+            }
+        }
+    }
+    
+}
