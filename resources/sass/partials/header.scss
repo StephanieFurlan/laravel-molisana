@@ -1,0 +1,29 @@
+header {
+    text-align: center;
+
+    img {
+        padding: 30px 0;
+    }
+    .list-inline {
+        list-style-type: none;
+        font-size: 28px;
+
+        li {
+            display: inline-block;
+            padding: 20px 10px;
+            margin: 0 5px;
+            &:hover {
+                background-color: $mainColor;
+                cursor: pointer;
+            }
+            // to be removed
+            &.active {
+                background-color: $mainColor;
+            }
+            a {
+                color: black;
+            }
+        }
+    }
+}
+

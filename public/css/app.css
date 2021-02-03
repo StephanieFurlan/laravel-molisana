@@ -5,6 +5,36 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+header img {
+  padding: 30px 0;
+}
+header .list-inline {
+  list-style-type: none;
+  font-size: 28px;
+}
+header .list-inline li {
+  display: inline-block;
+  padding: 20px 10px;
+  margin: 0 5px;
+}
+header .list-inline li:hover {
+  background-color: #B2E5FC;
+  cursor: pointer;
+}
+header .list-inline li.active {
+  background-color: #B2E5FC;
+}
+header .list-inline li a {
+  color: black;
 }
