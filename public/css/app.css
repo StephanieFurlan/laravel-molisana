@@ -13,6 +13,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
 }
@@ -41,18 +46,23 @@ header .list-inline li a {
 
 main {
   background-image: url("/img/fondo-pag-speciali.jpg");
+  background-repeat: repeat-y;
+  padding: 60px 0;
 }
-main .container {
-  width: 90%;
-  margin: 0 auto;
+main h2 {
+  color: #163776;
+  font-size: 32px;
+}
+main .card-container {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
-main .container .card {
+main .card-container .card {
   width: calc(100% / 3 - 10px);
   margin: 5px;
 }
-main .container .card img {
+main .card-container .card img {
   width: 100%;
   display: block;
 }

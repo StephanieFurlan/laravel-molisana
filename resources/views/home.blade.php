@@ -18,29 +18,37 @@
             </ul>
         </header>
         <main>
-            <h1>LE LUNGHE</h1>
             <section class="container">
-                @foreach ($lunghe as $pasta)
+                <h2>LE LUNGHE</h2>
+                <div class="card-container">
+                    @foreach ($lunghe as $pasta)
                     <div class="card">
                         <img src="{{ $pasta['src']}}" alt="">
                     </div>
                 @endforeach
+                </div>
             </section>
-            <h1>LE CORTE</h1>
+            
             <section class="container">
-                @foreach ($corte as $pasta)
+                <h2>LE CORTE</h2>
+                <div class="card-container">
+                    @foreach ($corte as $pasta)
                     <div class="card">
                         <img src="{{ $pasta['src']}}" alt="">
                     </div>
                 @endforeach
+                </div>
             </section>
-            <h1>LE CORTISSIME</h1>
+
             <section class="container">
-                @foreach ($cortissime as $pasta)
+                <h2>LE CORTISSIME</h2>
+                <div class="card-container">
+                    @foreach ($cortissime as $pasta)
                     <div class="card">
                         <img src="{{ $pasta['src']}}" alt="">
                     </div>
                 @endforeach
+                </div>
             </section>
         </main>
         <footer>
