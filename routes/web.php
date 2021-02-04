@@ -156,12 +156,12 @@ Route::get('/', function () {
         'cortissime' => $cortissime
         ]
     );
-});
+})->name('home');
 
 
-Route::get('/pasta', function () {
-    return view('pasta');
-});
+Route::get('/product', function () {
+    return view('product');
+})->name('product');
 Route::get('/news', function () {
     return view('news');
-});
+})->name('news');

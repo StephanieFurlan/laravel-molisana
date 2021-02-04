@@ -1,6 +1,6 @@
 @extends('layouts/base')
 @section('content')
-    <main>
+    <div class="container-lg">
         <section class="container">
             <h2>LE LUNGHE</h2>
             <div class="card-container">
@@ -8,7 +8,7 @@
                 <div class="card">
                     <img src="{{ $pasta['src']}}" alt="">
                 </div>
-            @endforeach
+                @endforeach
             </div>
         </section>
         
@@ -33,5 +33,5 @@
             @endforeach
             </div>
         </section>
-    </main>
+    <div>
 @endsection
