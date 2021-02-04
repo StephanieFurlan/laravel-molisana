@@ -162,3 +162,6 @@ Route::get('/', function () {
 Route::get('/pasta', function () {
     return view('pasta');
 });
+Route::get('/news', function () {
+    return view('news');
+});

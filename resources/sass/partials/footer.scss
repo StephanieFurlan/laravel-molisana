@@ -30,3 +30,15 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 950px) {
+    footer {
+        .footer-content {
+            flex-direction: column;
+            .col {
+                width: 100%;
+            }
+        }
+    }
+  }
+  

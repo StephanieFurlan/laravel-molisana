@@ -22,3 +22,24 @@ main {
         }
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+    main {
+        .card-container {
+            .card {
+                width: 100%;
+            }
+        }
+    }
+  }
+  
+@media only screen and (max-width: 950px) and (min-width: 481px) {
+    main {
+        .card-container {
+            .card {
+                width: calc(100% / 2 - 10px);
+            }
+        }
+    }
+}  

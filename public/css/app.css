@@ -23,10 +23,15 @@ header {
 }
 header img {
   padding: 30px 0;
+  display: inline-block;
+}
+header #hamburger-icon {
+  display: none;
 }
 header .list-inline {
   list-style-type: none;
   font-size: 28px;
+  display: block;
 }
 header .list-inline li {
   display: inline-block;
@@ -44,6 +49,16 @@ header .list-inline li a {
   color: black;
 }
 
+@media only screen and (max-width: 950px) {
+  header #hamburger-icon {
+    display: block;
+    padding-bottom: 15px;
+    color: #163776;
+  }
+  header .list-inline {
+    display: none;
+  }
+}
 main {
   background-image: url("/img/fondo-pag-speciali.jpg");
   background-repeat: repeat-y;
@@ -67,6 +82,16 @@ main .card-container .card img {
   display: block;
 }
 
+@media only screen and (max-width: 480px) {
+  main .card-container .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 481px) {
+  main .card-container .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
 footer {
   background-image: url("/img/footer-montagne-bottom.jpg");
   background-repeat: no-repeat;
@@ -96,4 +121,13 @@ footer .footer-content .col a {
 }
 footer .footer-content .col .link-list li {
   padding: 5px 0;
+}
+
+@media only screen and (max-width: 950px) {
+  footer .footer-content {
+    flex-direction: column;
+  }
+  footer .footer-content .col {
+    width: 100%;
+  }
 }
