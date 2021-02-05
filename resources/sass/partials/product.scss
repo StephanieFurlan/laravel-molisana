@@ -1,13 +1,39 @@
 
-.carousel {
+.wrapper {
     position: relative;
-    .slide {
+    h2 {
+        color: $titleColor;
+        text-align: center;
+        padding: 30px 0;
+    }
+    background-color: #B8DAE6;
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    p {
+        color: $titleColor;
+        line-height: 24px;
+        padding: 20px 0;
+    }
+
+    #chevron-left {
         position: absolute;
         left: 0;
-        top: 0;
-        width: 100%;
-        img {
-            width: 100%;
-        }
+        top: 50%;
+        font-size: 40px;
+    }
+    #chevron-right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        font-size: 40px;
+    }
+
+    i {
+        color: white;
+        padding: 10px;
+        background-color: rgba(255,255,255, 0.3);
     }
 }

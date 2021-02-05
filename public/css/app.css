@@ -76,10 +76,24 @@ header .list-inline li a {
 .container-lg .card-container .card {
   width: calc(100% / 3 - 10px);
   margin: 5px;
+  position: relative;
+}
+.container-lg .card-container .card:hover {
+  cursor: pointer;
 }
 .container-lg .card-container .card img {
   width: 100%;
   display: block;
+}
+.container-lg .card-container .card a {
+  display: none;
+}
+.container-lg .card-container .card:hover a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 480px) {
@@ -92,17 +106,40 @@ header .list-inline li a {
     width: calc(100% / 2 - 10px);
   }
 }
-.carousel {
+.wrapper {
   position: relative;
+  background-color: #B8DAE6;
 }
-.carousel .slide {
+.wrapper h2 {
+  color: #163776;
+  text-align: center;
+  padding: 30px 0;
+}
+.wrapper img {
+  width: 100%;
+  display: block;
+}
+.wrapper p {
+  color: #163776;
+  line-height: 24px;
+  padding: 20px 0;
+}
+.wrapper #chevron-left {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 100%;
+  top: 50%;
+  font-size: 40px;
 }
-.carousel .slide img {
-  width: 100%;
+.wrapper #chevron-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 40px;
+}
+.wrapper i {
+  color: white;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 footer {
